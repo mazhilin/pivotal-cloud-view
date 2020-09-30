@@ -7,15 +7,15 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="Cache" content="no-cache">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
     <meta name="keywords" content="Pivotal,分布式,云计算,管理平台">
     <meta name="description" content="Pivotal分布式管理云平台">
     <meta name="referrer" content="always">
     <title>Pivotal分布式管理云平台</title>
-    <link href="../../../resource/icons/pivotal-ico.ico" rel="shortcut icon "
-          type="image/x-icon">
+    <link href="../resources/icons/pivotal-ico.ico" rel="shortcut icon" type="image/x-icon">
     <link href="../../../config/element-2.12.0/styles/element-ui.css" rel="stylesheet">
-    <link href="../../../public/css/pivotal-ui.min.css" rel="stylesheet">
+    <link href="../public/css/passport-ui.min.css" rel="stylesheet">
     <link href="../../../config/iconfont-1.0.0/styles/iconfont.css" rel="stylesheet">
 </head>
 <body>
@@ -42,14 +42,14 @@
                 </el-form-item>
                 <el-form-item prop="username">
                     <el-input name="账号" placeholder="用户名／手机号" type="text" v-model="dataForm.username">
-              <span slot="prefix" class="el-input__icon">
+              <span slot="prefix" class="el-input-icon">
                 <svg class="icon-svg" aria-hidden="true"><use xlink:href="#icon-user"></use></svg>
               </span>
                     </el-input>
                 </el-form-item>
                 <el-form-item prop="password">
                     <el-input name="密码" placeholder="密码" type="text" type="password" v-model="dataForm.password">
-              <span slot="prefix" class="el-input__icon">
+              <span slot="prefix" class="el-input-icon">
                 <svg class="icon-svg" aria-hidden="true"><use xlink:href="#icon-lock"></use></svg>
               </span>
                     </el-input>
@@ -58,10 +58,10 @@
                     <el-row :gutter="20">
                         <el-col :span="14">
                             <el-input v-model="dataForm.captcha" placeholder="验证码">
-                  <span slot="prefix" class="el-input__icon">
+                  <span slot="prefix" class="el-input-icon">
                     <svg class="icon-svg" aria-hidden="true"><use xlink:href="#icon-safetycertificate"></use></svg>
                   </span>
-                        </el-input>
+                            </el-input>
                         </el-col>
                         <el-col :span="10" class="login-captcha">
                             <img src="../../../resource/images/captcha/captcha.png" alt="">
@@ -74,8 +74,8 @@
             </el-form>
             <!--page-form-->
             <div class="pivotal-ui-shortcut">
-                <h4 class="pivotal-ui-shortcut__title"><span>使用社交账号直接登录</span></h4>
-                <ul class="pivotal-ui-shortcut__list">
+                <h4 class="pivotal-ui-shortcut-title"><span>使用社交账号直接登录</span></h4>
+                <ul class="pivotal-ui-shortcut-list">
                     <li>
                         <a href="#" style="color: #191717;">
                             <svg class="icon-svg" aria-hidden="true">
@@ -118,15 +118,7 @@
         </footer>
     </div>
 </div>
-<!--<script chaer-set="" rel="application/javascript" src="../../../component/vue-2.6.10/dist/vue.js" ></script>
-<script rel="application/javascript" src="../../../component/vue-router-3.1.3/dist/vue-router.js" ></script>
-<script rel="application/javascript" src="../../../component/qs-6.9.1/dist/qs.js" ></script>
-<script rel="application/javascript" src="../../../component/axios-0.19.0/dist/axios.js" ></script>
-<script rel="application/javascript" src="../../../component/element-2.12.0/dist/element-ui.js"></script>
-<script rel="application/javascript" src="../../../component/iconfont-1.0.0/dist/iconfont.js" ></script>
-<script charset="utf-8" rel="application/javascript" src="../../../public/js/common/initialize.js"></script>
-<script charset="utf-8" rel="application/javascript" src="../../../public/js/common/request.js"></script>-->
-<script charset="utf-8" rel="application/javascript" src="../../../public/js/global/global.js"></script>
-<script rel="application/javascript" src="../../../static/base/login/forget.js"></script>
+<script charset="utf-8" rel="application/javascript" src="../public/js/global.js"></script>
+<script charset="utf-8" rel="application/javascript" src="../static/forget.js"></script>
 </body>
 </html>

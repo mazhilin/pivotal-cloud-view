@@ -1803,9 +1803,9 @@
                     rawName: "v-show",
                     value: !e.showClose,
                     expression: "!showClose"
-                }], class: ["el-select__caret", "el-input__icon", "el-icon-" + e.iconClass]
+                }], class: ["el-select__caret", "el-input-icon", "el-icon-" + e.iconClass]
             }), e.showClose ? i("i", {
-                staticClass: "el-select__caret el-input__icon el-icon-circle-close",
+                staticClass: "el-select__caret el-input-icon el-icon-circle-close",
                 on: {click: e.handleClearClick}
             }) : e._e()])], 2), i("transition", {
                 attrs: {name: "el-zoom-in-top"},
@@ -2098,9 +2098,9 @@
                         e.hovering = !1
                     }
                 }
-            }, ["textarea" !== e.type ? [e.$slots.prepend ? i("div", {staticClass: "el-input-group__prepend"}, [e._t("prepend")], 2) : e._e(), "textarea" !== e.type ? i("input", e._b({
+            }, ["textarea" !== e.type ? [e.$slots.prepend ? i("div", {staticClass: "el-input-group-prepend"}, [e._t("prepend")], 2) : e._e(), "textarea" !== e.type ? i("input", e._b({
                 ref: "input",
-                staticClass: "el-input__inner",
+                staticClass: "el-input-inner",
                 attrs: {
                     tabindex: e.tabindex,
                     type: e.showPassword ? e.passwordVisible ? "text" : "password" : e.type,
@@ -2118,24 +2118,24 @@
                     blur: e.handleBlur,
                     change: e.handleChange
                 }
-            }, "input", e.$attrs, !1)) : e._e(), e.$slots.prefix || e.prefixIcon ? i("span", {staticClass: "el-input__prefix"}, [e._t("prefix"), e.prefixIcon ? i("i", {
-                staticClass: "el-input__icon",
+            }, "input", e.$attrs, !1)) : e._e(), e.$slots.prefix || e.prefixIcon ? i("span", {staticClass: "el-input-prefix"}, [e._t("prefix"), e.prefixIcon ? i("i", {
+                staticClass: "el-input-icon",
                 class: e.prefixIcon
             }) : e._e()], 2) : e._e(), e.getSuffixVisible() ? i("span", {staticClass: "el-input__suffix"}, [i("span", {staticClass: "el-input__suffix-inner"}, [e.showClear && e.showPwdVisible && e.isWordLimitVisible ? e._e() : [e._t("suffix"), e.suffixIcon ? i("i", {
-                staticClass: "el-input__icon",
+                staticClass: "el-input-icon",
                 class: e.suffixIcon
             }) : e._e()], e.showClear ? i("i", {
-                staticClass: "el-input__icon el-icon-circle-close el-input__clear",
+                staticClass: "el-input-icon el-icon-circle-close el-input__clear",
                 on: {
                     mousedown: function (e) {
                         e.preventDefault()
                     }, click: e.clear
                 }
             }) : e._e(), e.showPwdVisible ? i("i", {
-                staticClass: "el-input__icon el-icon-view el-input__clear",
+                staticClass: "el-input-icon el-icon-view el-input__clear",
                 on: {click: e.handlePasswordVisible}
             }) : e._e(), e.isWordLimitVisible ? i("span", {staticClass: "el-input__count"}, [i("span", {staticClass: "el-input__count-inner"}, [e._v("\n            " + e._s(e.textLength) + "/" + e._s(e.upperLimit) + "\n          ")])]) : e._e()], 2), e.validateState ? i("i", {
-                staticClass: "el-input__icon",
+                staticClass: "el-input-icon",
                 class: ["el-input__validateIcon", e.validateIcon]
             }) : e._e()]) : e._e(), e.$slots.append ? i("div", {staticClass: "el-input-group__append"}, [e._t("append")], 2) : e._e()] : i("textarea", e._b({
                 ref: "textarea",
@@ -4353,7 +4353,7 @@
                     key: +this.collapse,
                     style: {backgroundColor: this.backgroundColor || ""},
                     class: {
-                        "el-menu--horizontal": "horizontal" === this.mode,
+                        "el-menu-horizontal": "horizontal" === this.mode,
                         "el-menu--collapse": this.collapse,
                         "el-menu": !0
                     }
@@ -4708,7 +4708,7 @@
                         }, focus: this.handleMouseenter
                     }
                 }, [e("div", {
-                    class: "el-submenu__title",
+                    class: "el-submenu-title",
                     ref: "submenu-title",
                     on: {
                         click: this.handleClick,
@@ -4716,7 +4716,7 @@
                         mouseleave: this.handleTitleMouseleave
                     },
                     style: [r, s, {backgroundColor: a}]
-                }, [p.title, e("i", {class: ["el-submenu__icon-arrow", g]})]), this.isMenuPopup ? m : v])
+                }, [p.title, e("i", {class: ["el-submenu-icon-arrow", g]})]), this.isMenuPopup ? m : v])
             }
         }, void 0, void 0, !1, null, null, null);
         ri.options.__file = "packages/menu/src/submenu.vue";
@@ -7995,14 +7995,14 @@
                     expression: "handleClose"
                 }],
                 ref: "reference",
-                staticClass: "el-date-editor el-range-editor el-input__inner",
+                staticClass: "el-date-editor el-range-editor el-input-inner",
                 class: ["el-date-editor--" + e.type, e.pickerSize ? "el-range-editor--" + e.pickerSize : "", e.pickerDisabled ? "is-disabled" : "", e.pickerVisible ? "is-active" : ""],
                 on: {
                     click: e.handleRangeClick, mouseenter: e.handleMouseEnter, mouseleave: function (t) {
                         e.showClose = !1
                     }, keydown: e.handleKeydown
                 }
-            }, [i("i", {class: ["el-input__icon", "el-range__icon", e.triggerClass]}), i("input", e._b({
+            }, [i("i", {class: ["el-input-icon", "el-range__icon", e.triggerClass]}), i("input", e._b({
                 staticClass: "el-range-input",
                 attrs: {
                     autocomplete: "off",
@@ -8025,7 +8025,7 @@
                 domProps: {value: e.displayValue && e.displayValue[1]},
                 on: {input: e.handleEndInput, change: e.handleEndChange, focus: e.handleFocus}
             }, "input", e.secondInputId, !1)), e.haveTrigger ? i("i", {
-                staticClass: "el-input__icon el-range__close-icon",
+                staticClass: "el-input-icon el-range__close-icon",
                 class: [e.showClose ? "" + e.clearIcon : ""],
                 on: {click: e.handleClickIcon}
             }) : e._e()], 2) : i("el-input", e._b({
@@ -8062,13 +8062,13 @@
                     }
                 }
             }, "el-input", e.firstInputId, !1), [i("i", {
-                staticClass: "el-input__icon",
+                staticClass: "el-input-icon",
                 class: e.triggerClass,
                 attrs: {slot: "prefix"},
                 on: {click: e.handleFocus},
                 slot: "prefix"
             }), e.haveTrigger ? i("i", {
-                staticClass: "el-input__icon",
+                staticClass: "el-input-icon",
                 class: [e.showClose ? "" + e.clearIcon : ""],
                 attrs: {slot: "suffix"},
                 on: {click: e.handleClickIcon},
@@ -11720,7 +11720,7 @@
         var uo = lo, co = function () {
             var e = this.$createElement;
             return (this._self._c || e)("div", {
-                staticClass: "el-tabs__active-bar",
+                staticClass: "el-tabs-active-bar",
                 class: "is-" + this.rootTabs.tabPosition,
                 style: this.barStyle
             })
@@ -11851,10 +11851,10 @@
                     o = this.onTabRemove, l = this.navStyle, u = this.scrollable, c = this.scrollNext,
                     h = this.scrollPrev, d = this.changeTab, p = this.setFocus, f = this.removeFocus,
                     m = u ? [e("span", {
-                        class: ["el-tabs__nav-prev", u.prev ? "" : "is-disabled"],
+                        class: ["el-tabs-nav-prev", u.prev ? "" : "is-disabled"],
                         on: {click: h}
                     }, [e("i", {class: "el-icon-arrow-left"})]), e("span", {
-                        class: ["el-tabs__nav-next", u.next ? "" : "is-disabled"],
+                        class: ["el-tabs-nav-next", u.next ? "" : "is-disabled"],
                         on: {click: c}
                     }, [e("i", {class: "el-icon-arrow-right"})])] : null, v = this._l(n, function (i, n) {
                         var s, l = i.name || i.index || n, u = i.isClosable || r;
@@ -11867,7 +11867,7 @@
                             }
                         }) : null, h = i.$slots.label || i.label, d = i.active ? 0 : -1;
                         return e("div", {
-                            class: (s = {"el-tabs__item": !0}, s["is-" + t.rootTabs.tabPosition] = !0, s["is-active"] = i.active, s["is-disabled"] = i.disabled, s["is-closable"] = u, s["is-focus"] = t.isFocus, s),
+                            class: (s = {"el-tabs-item": !0}, s["is-" + t.rootTabs.tabPosition] = !0, s["is-active"] = i.active, s["is-disabled"] = i.disabled, s["is-closable"] = u, s["is-focus"] = t.isFocus, s),
                             attrs: {
                                 id: "tab-" + l,
                                 "aria-controls": "pane-" + l,
@@ -11891,11 +11891,11 @@
                             }
                         }, [h, c])
                     });
-                return e("div", {class: ["el-tabs__nav-wrap", u ? "is-scrollable" : "", "is-" + this.rootTabs.tabPosition]}, [m, e("div", {
-                    class: ["el-tabs__nav-scroll"],
+                return e("div", {class: ["el-tabs-nav-wrap", u ? "is-scrollable" : "", "is-" + this.rootTabs.tabPosition]}, [m, e("div", {
+                    class: ["el-tabs-nav-scroll"],
                     ref: "navScroll"
                 }, [e("div", {
-                    class: ["el-tabs__nav", "is-" + this.rootTabs.tabPosition, s && -1 !== ["top", "bottom"].indexOf(this.rootTabs.tabPosition) ? "is-stretch" : ""],
+                    class: ["el-tabs-nav", "is-" + this.rootTabs.tabPosition, s && -1 !== ["top", "bottom"].indexOf(this.rootTabs.tabPosition) ? "is-stretch" : ""],
                     ref: "nav",
                     style: l,
                     attrs: {role: "tablist"},
@@ -11989,7 +11989,7 @@
                             }
                         }, attrs: {tabindex: "0"}
                     }, [e("i", {class: "el-icon-plus"})]) : null,
-                    p = e("div", {class: ["el-tabs__header", "is-" + c]}, [d, e("tab-nav", {
+                    p = e("div", {class: ["el-tabs-header", "is-" + c]}, [d, e("tab-nav", {
                         props: {
                             currentName: a,
                             onTabClick: n,
@@ -11999,7 +11999,7 @@
                             panes: o,
                             stretch: h
                         }, ref: "nav"
-                    })]), f = e("div", {class: "el-tabs__content"}, [this.$slots.default]);
+                    })]), f = e("div", {class: "el-tabs-content"}, [this.$slots.default]);
                 return e("div", {
                     class: (t = {
                         "el-tabs": !0,
@@ -15170,7 +15170,7 @@
                 }
             }, [i("template", {slot: "suffix"}, [e.clearBtnVisible ? i("i", {
                 key: "clear",
-                staticClass: "el-input__icon el-icon-circle-close",
+                staticClass: "el-input-icon el-icon-circle-close",
                 on: {
                     click: function (t) {
                         return t.stopPropagation(), e.handleClear(t)
@@ -15178,7 +15178,7 @@
                 }
             }) : i("i", {
                 key: "arrow-down",
-                class: ["el-input__icon", "el-icon-arrow-down", e.dropDownVisible && "is-reverse"],
+                class: ["el-input-icon", "el-icon-arrow-down", e.dropDownVisible && "is-reverse"],
                 on: {
                     click: function (t) {
                         t.stopPropagation(), e.toggleDropDownVisible()
@@ -16069,7 +16069,7 @@
                 }, updateStyle: function () {
                     var e = this.$el, t = this.inputInitialHeight;
                     if (!this.$isServer && e) {
-                        var i = this.$refs.suggestionPanel, n = e.querySelector(".el-input__inner");
+                        var i = this.$refs.suggestionPanel, n = e.querySelector(".el-input-inner");
                         if (n) {
                             var r = e.querySelector(".el-cascader__tags"), s = null;
                             if (i && (s = i.$el)) s.querySelector(".el-cascader__suggestion-list").style.minWidth = n.offsetWidth + "px";
@@ -16750,7 +16750,7 @@
                     }, expression: "query"
                 }
             }, [i("i", {
-                class: ["el-input__icon", "el-icon-" + e.inputIcon],
+                class: ["el-input-icon", "el-icon-" + e.inputIcon],
                 attrs: {slot: "prefix"},
                 on: {click: e.clearQuery},
                 slot: "prefix"
