@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow: hidden; height: 100%;" xmlns:xlink="http://www.w3.org/1999/xlink">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="keywords" content="Pivotal,分布式,云计算,管理平台">
+    <meta name="description" content="Pivotal分布式管理云平台">
+    <meta name="referrer" content="always">
+    <title>Pivotal分布式管理云平台</title>
+    <link href="../resources/icons/pivotal-ico.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="../component/element-2.12.0/styles/element-ui.css" rel="stylesheet">
+    <link href="../public/css/passport-ui.min.css" rel="stylesheet">
+    <link href="../component/iconfont-1.0.0/styles/iconfont.css" rel="stylesheet">
+</head>
+<body>
+<div v-cloak class="pivotal-ui-page page-login">
+    <div class="login-wrapper">
+        <!-- page-header -->
+        <header class="pivotal-ui-page-header">
+            <h2 class="pivotal-ui-brand">Pivotal分布式管理云平台</h2>
+            <ul class="pivotal-ui-intro">
+                <li>——————————欢迎进入——————————</li>
+            </ul>
+        </header>
+        <!-- page-main -->
+        <main class="pivotal-ui-page-main">
+            <h3 class="page-title">密码中心</h3>
+            <!--page-form-->
+            <el-form :model="dataForm" :rules="dataRule" ref="dataForm" @keyup.enter.native="dataFormSubmitHandle()">
+                <el-form-item prop="language">
+                    <el-select v-model="dataForm.language" placeholder="语言选择" class="w-100">
+                        <el-option label="简体中文" value="zh-CN"></el-option>
+                        <el-option label="繁體中文" value="zh-TW"></el-option>
+                        <el-option label="English" value="en-US"></el-option>
+                    </el-select>
+                </el-form-item>
+                <el-form-item prop="username">
+                    <el-input name="账号" placeholder="用户名／手机号" type="text" v-model="dataForm.username">
+              <span slot="prefix" class="el-input-icon">
+                <svg class="icon-svg" aria-hidden="true"><use xlink:href="#icon-user"></use></svg>
+              </span>
+                    </el-input>
+                </el-form-item>
+                <el-form-item prop="password">
+                    <el-input name="密码" placeholder="密码" type="text" type="password" v-model="dataForm.password">
+              <span slot="prefix" class="el-input-icon">
+                <svg class="icon-svg" aria-hidden="true"><use xlink:href="#icon-lock"></use></svg>
+              </span>
+                    </el-input>
+                </el-form-item>
+                <el-form-item prop="captcha">
+                    <el-row :gutter="20">
+                        <el-col :span="14">
+                            <el-input v-model="dataForm.captcha" placeholder="验证码">
+                  <span slot="prefix" class="el-input-icon">
+                    <svg class="icon-svg" aria-hidden="true"><use xlink:href="#icon-safetycertificate"></use></svg>
+                  </span>
+                            </el-input>
+                        </el-col>
+                        <el-col :span="10" class="login-captcha">
+                            <img src="../../../resource/images/captcha/captcha.png" alt="">
+                        </el-col>
+                    </el-row>
+                </el-form-item>
+                <el-form-item>
+                    <el-button class="w-100" type="primary" @click="dataFormSubmitHandle()">重置密码</el-button>
+                </el-form-item>
+            </el-form>
+            <!--page-form-->
+            <div class="pivotal-ui-shortcut">
+                <h4 class="pivotal-ui-shortcut-title"><span>使用社交账号直接登录</span></h4>
+                <ul class="pivotal-ui-shortcut-list">
+                    <li>
+                        <a href="#" style="color: #191717;">
+                            <svg class="icon-svg" aria-hidden="true">
+                                <use xlink:href="#icon-github-fill"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" style="color: #4bb772;">
+                            <svg class="icon-svg" aria-hidden="true">
+                                <use xlink:href="#icon-wechat-fill"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" style="color: #26a4de;">
+                            <svg class="icon-svg" aria-hidden="true">
+                                <use xlink:href="#icon-QQ-circle-fill"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" style="color: #ec5c58;">
+                            <svg class="icon-svg" aria-hidden="true">
+                                <use xlink:href="#icon-weibo-circle-fill"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="login-guide">还没有账号？<a href="./register.html">立即注册</a></p>
+        </main>
+        <!-- page-footer -->
+        <footer class="pivotal-ui-page-footer">
+            <p>
+                <a href="http://pivotal.api.io/" target="_blank">Pivotal分布式云管理平台</a>
+            </p>
+            <p><a href="https://www.pivotal.api.io/" target="_blank">版权所有</a>© 2018-2019 Pivotal分布式云技术服务团队出品,All Rights
+                Reserved.</p>
+        </footer>
+    </div>
+</div>
+<script charset="utf-8" rel="application/javascript" src="../public/js/global.js"></script>
+<script charset="utf-8" rel="application/javascript" src="../static/forget.js"></script>
+</body>
+</html>
