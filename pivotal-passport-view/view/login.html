@@ -16,7 +16,7 @@
 <body>
 <div class="login-wrapper">
     <div class="layui-form">
-        <h2>PivotalCloud统一登录平台</h2>
+        <h2>PivotalCloud统一登录中心</h2>
         <div class="layui-form-item layui-input-icon-group">
             <i class="layui-icon layui-icon-username"></i>
             <select id="tenantCode" name="tenantCode">
@@ -32,14 +32,14 @@
         </div>
         <div class="layui-form-item layui-input-icon-group">
             <i class="layui-icon layui-icon-username"></i>
-            <input autocomplete="off" class="layui-input" id="username" lay-verType="tips" lay-verify="required" name="username" placeholder="请输入登录账号" required value="admin"/>
+            <input autocomplete="off" class="layui-input" id="username" lay-verType="tips" lay-verify="required" name="username" placeholder="请输入登录账号" required value=""/>
         </div>
         <div class="layui-form-item layui-input-icon-group">
             <i class="layui-icon layui-icon-password"></i>
-            <input class="layui-input" id="password" lay-verType="tips" lay-verify="required" name="password" placeholder="请输入登录密码" required type="password" value="111111"/>
+            <input class="layui-input" id="password" lay-verType="tips" lay-verify="required" name="password" placeholder="请输入登录密码" required type="password" value=""/>
         </div>
         <div class="layui-form-item layui-input-icon-group login-captcha-group">
-            <i class="layui-icon layui-icon-auz"></i>
+            <i class="layui-icon layui-icon-vercode"></i>
             <input autocomplete="off" class="layui-input" id="kaptcha" lay-verType="tips" lay-verify="required" placeholder="请输入验证码" required/>
             <img alt="" class="login-captcha" src=""/>
         </div>
@@ -52,15 +52,16 @@
             <button class="layui-btn layui-btn-fluid" id="submit">登录</button>
         </div>
         <div class="layui-form-item login-oauth-group text-center">
-            <a href=""><i class="layui-icon layui-icon-login-qq" style="color: #3492ed"></i></a>&emsp;
-            <a href="${ctxPath}/oauth/render/gitee">
-                <img class="layui-icon" src="../assets/expand/images/git.png" style="height: 28px; width: 28px; margin-top: -12px !important"/>
-            </a>
+            <a href="javascript:;"><i class="layui-icon layui-icon-login-qq" style="color:#3492ed;"></i></a>&emsp;
+            <a href="javascript:;"><i class="layui-icon layui-icon-login-wechat" style="color:#4daf29;"></i></a>&emsp;
+            <a href="javascript:;"><i class="layui-icon layui-icon-login-weibo" style="color:#CF1900;"></i></a>&emsp;
+            <a href="/oauth/render/gitee"><img class="layui-icon" src="../resources/images/gitee.png" style="height: 28px; width: 28px; margin-top: -12px !important"/>
+            </a>&emsp;
         </div>
     </div>
 </div>
 <div class="login-copyright">
-    Copyright © 2018-2020 Pivotal Cloud all rights reserved.
+    Copyright © 2018-2020 Pivotal Cloud 云技术团队 all rights reserved.
 </div>
 
 
